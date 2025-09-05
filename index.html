@@ -63,12 +63,41 @@
         }
         
         
+        .tagline {
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #666666;
+            margin: 2rem 0 1rem 0;
+            letter-spacing: 0.02em;
+        }
+        
         .coming-soon {
-            font-size: 2rem;
-            font-weight: 300;
+            font-size: 1.75rem;
+            font-weight: 500;
             letter-spacing: 0.05em;
             color: #333333;
-            margin-top: 1rem;
+            margin: 1rem 0 2rem 0;
+        }
+        
+        .contact {
+            margin-top: 2rem;
+        }
+        
+        .contact-label {
+            font-size: 0.9rem;
+            color: #888888;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-email {
+            font-size: 1.1rem;
+            color: #333333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .contact-email:hover {
+            color: #000000;
         }
         
         /* Responsive */
@@ -77,8 +106,12 @@
                 width: 320px;
             }
             
+            .tagline {
+                font-size: 1.1rem;
+            }
+            
             .coming-soon {
-                font-size: 1.75rem;
+                font-size: 1.5rem;
             }
             
             .container {
@@ -91,8 +124,16 @@
                 width: 280px;
             }
             
+            .tagline {
+                font-size: 1rem;
+            }
+            
             .coming-soon {
-                font-size: 1.5rem;
+                font-size: 1.3rem;
+            }
+            
+            .contact-email {
+                font-size: 1rem;
             }
         }
     </style>
@@ -101,11 +142,20 @@
     <div class="container">
         <div class="logo-container">
             <!-- Logo Sobrecupos original con efecto de color en corazón -->
-            <img class="logo-svg" src="/sobrecupos.svg" alt="Sobrecupos" />
+            <img class="logo-svg" src="sobrecupos.svg" alt="Sobrecupos" />
+        </div>
+        
+        <div class="tagline">
+            Más tiempo sano, menos tiempo enfermo
         </div>
         
         <div class="coming-soon">
-            PRONTO
+            Muy pronto
+        </div>
+        
+        <div class="contact">
+            <p class="contact-label">Para más información:</p>
+            <a href="mailto:contacto@sobrecupos.com" class="contact-email">contacto@sobrecupos.com</a>
         </div>
     </div>
 </body>
